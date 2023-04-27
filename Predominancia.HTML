@@ -12,7 +12,7 @@
     <h1>Questionário Predominância Cerebral - Ned Hermann</h1>
 
 
-    <form id="formulario" onsubmit="return validarFormulario();">
+    <form id="formulario" onsubmit="return validarFormulario()">
         <fieldset class="sem-borda" id="email">
             <label for="name">Nome</label>
             <input type="text" id="name">
@@ -431,174 +431,39 @@
 
     </form>
 
-
-    <script>
-        function validarFormulario() {
-            var checkboxes1 = document.getElementsByName('p1[]');
-            var selecionados1 = 0;
-            for (var i = 0; i < checkboxes1.length; i++) {
-                if (checkboxes1[i].checked) {
-                    selecionados1++;
-                }
-            }
-            if (selecionados1 != 5) {
-                alert('Selecione exatamente 5 opções na pergunta 1.');
-                return false;
-            }
-
-            var checkboxes2 = document.getElementsByName('p2[]');
-            var selecionados2 = 0;
-            for (var i = 0; i < checkboxes2.length; i++) {
-                if (checkboxes2[i].checked) {
-                    selecionados2++;
-                }
-            }
-            if (selecionados2 != 5) {
-                alert('Selecione exatamente 5 opções na pergunta 2.');
-                return false;
-            }
-
-            var checkboxes3 = document.getElementsByName('p3[]');
-            var selecionados3 = 0;
-            for (var i = 0; i < checkboxes3.length; i++) {
-                if (checkboxes3[i].checked) {
-                    selecionados3++;
-                }
-            }
-            if (selecionados3 != 5) {
-                alert('Selecione exatamente 5 opções na pergunta 3.');
-                return false;
-            }
-
-            var checkboxes4 = document.getElementsByName('p4[]');
-            var selecionados4 = 0;
-            for (var i = 0; i < checkboxes4.length; i++) {
-                if (checkboxes4[i].checked) {
-                    selecionados4++;
-                }
-            }
-            if (selecionados4 != 1) {
-                alert('Selecione exatamente 1 opções na pergunta 4.');
-                return false;
-            }
-
-            var checkboxes5 = document.getElementsByName('p5[]');
-            var selecionados5 = 0;
-            for (var i = 0; i < checkboxes5.length; i++) {
-                if (checkboxes5[i].checked) {
-                    selecionados5++;
-                }
-            }
-            if (selecionados5 != 4) {
-                alert('Selecione exatamente 4 opções na pergunta 5.');
-                return false;
-            }
-
-            var checkboxes6 = document.getElementsByName('p6[]');
-            var selecionados6 = 0;
-            for (var i = 0; i < checkboxes6.length; i++) {
-                if (checkboxes6[i].checked) {
-                    selecionados6++;
-                }
-            }
-            if (selecionados6 != 5) {
-                alert('Selecione exatamente 5 opções na pergunta 6.');
-                return false;
-            }
-
-            var checkboxes7 = document.getElementsByName('p7[]');
-            var selecionados7 = 0;
-            for (var i = 0; i < checkboxes7.length; i++) {
-                if (checkboxes7[i].checked) {
-                    selecionados7++;
-                }
-            }
-            if (selecionados7 != 1) {
-                alert('Selecione exatamente 1 opção na pergunta 7.');
-                return false;
-            }
-
-            var checkboxes8 = document.getElementsByName('p8[]');
-            var selecionados8 = 0;
-            for (var i = 0; i < checkboxes8.length; i++) {
-                if (checkboxes8[i].checked) {
-                    selecionados8++;
-                }
-            }
-            if (selecionados8 != 4) {
-                alert('Selecione exatamente 4 opções na pergunta 8.');
-                return false;
-            }
-
-            var checkboxes9 = document.getElementsByName('p9[]');
-            var selecionados9 = 0;
-            for (var i = 0; i < checkboxes9.length; i++) {
-                if (checkboxes9[i].checked) {
-                    selecionados9++;
-                }
-            }
-            if (selecionados9 != 5) {
-                alert('Selecione exatamente 5 opções na pergunta 9.');
-                return false;
-            }
-
-            var checkboxes10 = document.getElementsByName('p10[]');
-            var selecionados10 = 0;
-            for (var i = 0; i < checkboxes10.length; i++) {
-                if (checkboxes10[i].checked) {
-                    selecionados10++;
-                }
-            }
-            if (selecionados10 != 1) {
-                alert('Selecione exatamente 1 opção na pergunta 10.');
-                return false;
-            }
-
-            var checkboxes11 = document.getElementsByName('p11[]');
-            var selecionados11 = 0;
-            for (var i = 0; i < checkboxes11.length; i++) {
-                if (checkboxes11[i].checked) {
-                    selecionados11++;
-                }
-            }
-            if (selecionados11 != 1) {
-                alert('Selecione exatamente 1 opção na pergunta 11.');
-                return false;
-            }
-
-            var checkboxes12 = document.getElementsByName('p12[]');
-            var selecionados12 = 0;
-            for (var i = 0; i < checkboxes12.length; i++) {
-                if (checkboxes12[i].checked) {
-                    selecionados12++;
-                }
-            }
-            if (selecionados12 != 3) {
-                alert('Selecione exatamente 3 opções na pergunta 12.');
-                return false;
-            }
-
-            // verificar se todas as perguntas foram respondidas corretamente
-            if (selecionados1 == 5 && selecionados2 == 5 && selecionados3 == 5 && selecionados4 <= 4 && selecionados5 <= 5 &&
-                selecionados6 == 1 && selecionados7 <= 4 && selecionados8 <= 5 && selecionados9 <= 3 && selecionados10 == 1 &&
-                selecionados11 == 1 && selecionados12 <= 3) {
-                return true;
-            } else {
-                alert('Por favor, responda todas as perguntas corretamente.');
-                return false;
-            }
-
-        }
-
-    </script>
-
-
-
-
     <script>
         const form = document.getElementById('formulario');
         form.addEventListener('submit', (event) => {
-            event.preventDefault();
+            var perguntas = [
+                { numero: 1, selecionados: 5, nome: 'p1[]' },
+                { numero: 2, selecionados: 5, nome: 'p2[]' },
+                { numero: 3, selecionados: 5, nome: 'p3[]' },
+                { numero: 4, selecionados: 1, nome: 'p4[]' },
+                { numero: 5, selecionados: 4, nome: 'p5[]' },
+                { numero: 6, selecionados: 5, nome: 'p6[]' },
+                { numero: 7, selecionados: 1, nome: 'p7[]' },
+                { numero: 8, selecionados: 4, nome: 'p8[]' },
+                { numero: 9, selecionados: 5, nome: 'p9[]' },
+                { numero: 10, selecionados: 1, nome: 'p10[]' },
+                { numero: 11, selecionados: 1, nome: 'p11[]' },
+                { numero: 12, selecionados: 3, nome: 'p12[]' }
+            ];
+
+            for (var i = 0; i < perguntas.length; i++) {
+                var checkboxes = document.getElementsByName(perguntas[i].nome);
+                var selecionados = 0;
+                for (var j = 0; j < checkboxes.length; j++) {
+                    if (checkboxes[j].checked) {
+                        selecionados++;
+                    }
+                }
+                if (selecionados != perguntas[i].selecionados) {
+                    alert('Selecione exatamente ' + perguntas[i].selecionados + ' opções na pergunta ' + perguntas[i].numero + '.');
+                    event.preventDefault();
+                    return false;
+                }
+            }
+
             const formData = new FormData(form);
             const searchParams = new URLSearchParams(formData);
             const resultUrl = 'resultado.html?' + searchParams.toString();
