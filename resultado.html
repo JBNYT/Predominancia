@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Resultado do formulário</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+  <h2>Resultado</h2>
+  <p id="result"></p>
+
+  <script>
+    const searchParams = new URLSearchParams(window.location.search);
+    const resultElement = document.getElementById('result');
+    const count = { 'SE': 0, 'SD': 0, 'IE': 0, 'ID': 0 };
+
+    for (const [name, value] of searchParams.entries()) {
+      if (name.endsWith('[]')) {
+        const category = name.slice(0, -2);
+        count[value]++;
+      }
+    }
+
+    resultElement.textContent = `Sua Pontuação foi SE= ${count['SE']} , SD= ${count['SD']} , IE= ${count['IE']}  e ID= ${count['ID']} .`;
+  </script>
+
+  <p></p>
+  <a href="e-book PREDOMINANCIA CEREBRAL.pdf" download>Download do E-Book</a>
+
+
+
+
+</body>
+
+</html>
