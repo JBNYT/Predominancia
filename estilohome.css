@@ -1,5 +1,6 @@
 h1 {
   text-align: center;
+  margin: 4px;
 }
 
 fieldset.sem-borda {
@@ -10,7 +11,7 @@ fieldset.sem-borda {
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
 }
 
 input[type="text"],
@@ -31,4 +32,33 @@ input[type="email"],
 button[type="submit"] {
   border-radius: 5px;
   box-shadow: 1px 1px 1px #cccccc;
+}
+
+fieldset {
+  background-color: #f8f8f8;
+}
+
+/* Estilos para dispositivos móveis */
+@media only screen and (max-width: 480px) {
+  /* Definir a largura do formulário para 90% */
+  .formulario {
+    width: 90%;
+  }
+
+  /* Reduzir o tamanho da fonte e o espaçamento entre campos de entrada */
+  input {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  /* Organizar campos de entrada em uma única coluna */
+  input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Alterar o tamanho da fonte para o botão de envio */
+  .botao {
+    font-size: 16px;
+  }
 }
