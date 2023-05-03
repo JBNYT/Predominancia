@@ -1,6 +1,7 @@
 h1 {
   text-align: center;
   margin: 4px 4px;
+  display: flexbox;
 }
 
 fieldset.sem-borda {
