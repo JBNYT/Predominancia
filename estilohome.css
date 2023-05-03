@@ -1,7 +1,8 @@
-h1 {
+h1,
+h2 {
   text-align: center;
-  margin: 4px 4px;
-  display: flexbox;
+  font-family: "Roboto", sans-serif;
+  margin: 4px;
 }
 
 fieldset.sem-borda {
@@ -37,11 +38,4 @@ button[type="submit"] {
 
 fieldset {
   background-color: #f8f8f8;
-}
-
-@media only screen and (max-width: 768px) {
-  /* Define o tamanho da fonte para telas menores */
-  body {
-    font-size: 14px;
-  }
 }
