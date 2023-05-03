@@ -37,3 +37,10 @@ button[type="submit"] {
 fieldset {
   background-color: #f8f8f8;
 }
+
+@media only screen and (max-width: 768px) {
+  /* Define o tamanho da fonte para telas menores */
+  body {
+    font-size: 14px;
+  }
+}
