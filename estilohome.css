@@ -47,3 +47,14 @@ fieldset {
     text-align: center;
   }
 }
+
+form {
+  text-align: left;
+}
+
+label fieldset {
+  display: block;
+  width: 100%;
+  text-align: left;
+  margin: 4px 0;
+}
