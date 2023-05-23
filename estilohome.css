@@ -1,0 +1,105 @@
+fieldset.sem-borda {
+  border: none;
+  text-align: center;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+body {
+  font-family: "SF Pro Family Font", sans-serif;
+  background-color: #000000;
+  margin: 4px 4px;
+  font-size: 100%;
+}
+
+h1,
+h2,
+p {
+  text-align: center;
+  font-family: "SF Pro Family Font", sans-serif;
+  margin: 4px;
+  color: #f8f8f8;
+}
+
+h1 {
+  margin: 2%;
+}
+
+.Instruções {
+  margin: 5%;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+}
+
+input[type="text"],
+select,
+input[type="email"],
+button[type="submit"] {
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px #000000;
+}
+button[type="submit"] {
+  background-color: #3399ff;
+  color: #ffffff;
+  width: 10%;
+  height: 5%;
+  font-size: 100%;
+  padding: 0.5% 1%;
+}
+.botao:hover {
+  background-color: rgb(19, 115, 205);
+  color: #fff;
+}
+
+fieldset {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "SF Pro Family Font", sans-serif;
+}
+
+form {
+  text-align: center;
+}
+
+fieldset {
+  display: block;
+  width: auto;
+  text-align: left;
+  margin: 1% 1%;
+  border: none;
+}
+
+/* Estilos para dispositivos móveis */
+@media only screen and (max-width: 480px) {
+  body {
+    margin: 0; /* Remover margens laterais para dispositivos estreitos */
+  }
+
+  button[type="submit"] {
+    width: 100%; /* Largura total para dispositivos estreitos */
+    height: auto; /* Altura automática */
+    font-size: 120%; /* Aumentar o tamanho da fonte */
+    padding: 2% 4%; /* Aumentar o espaçamento interno */
+  }
+}
+
+/* Estilos para dispositivos de tela pequena */
+@media only screen and (max-width: 768px) {
+  button[type="submit"] {
+    font-size: 110%; /* Ajustar o tamanho da fonte para dispositivos médios */
+    padding: 1.5% 3%; /* Ajustar o espaçamento interno para dispositivos médios */
+  }
+}
+
+/* Estilos para dispositivos grandes */
+@media only screen and (min-width: 1200px) {
+  form {
+    max-width: 800px; /* Limitar a largura do formulário para dispositivos grandes */
+    margin: 0 auto; /* Centralizar o formulário horizontalmente */
+  }
+}

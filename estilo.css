@@ -1,0 +1,91 @@
+body {
+  font-family: "SF Pro Family Font", sans-serif;
+  background-color: #000000;
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+#result {
+  font-size: 20px;
+  background-color: #000000;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 100%;
+  font-family: "SF Pro Family Font", sans-serif;
+  color: rgb(0, 0, 0);
+  background-color: rgb(16, 103, 202);
+  padding: 1%;
+  border-radius: 4%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#result {
+  font-weight: bold;
+}
+
+.se {
+  color: #1384ab;
+  margin: 5%;
+}
+
+.sd {
+  color: #ffce00;
+  margin: 5%;
+}
+
+.ie {
+  color: #91ff12;
+  margin: 5%;
+}
+
+.id {
+  color: #f12424;
+  margin: 5%;
+}
+
+.se,
+.sd,
+.ie,
+.id {
+  white-space: nowrap;
+  margin: 5%;
+}
+
+img {
+  margin: 2%;
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.botao {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4197d3;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.botao:hover {
+  background-color: #0077c2;
+  color: #fff;
+}

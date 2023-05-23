@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Resultado do formulário</title>
+  <link rel="stylesheet" href="estilo.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div class="container">
+    <h2>Resultado</h2>
+    <p id="result"></p>
+
+    <script>
+      const searchParams = new URLSearchParams(window.location.search);
+      const resultElement = document.getElementById('result');
+      const count = { 'SE': 0, 'SD': 0, 'IE': 0, 'ID': 0 };
+
+      for (const [name, value] of searchParams.entries()) {
+        if (name.endsWith('[]')) {
+          const category = name.slice(0, -2);
+          count[value]++;
+        }
+      }
+
+      resultElement.innerHTML = `<span class="se">Analítico = ${count['SE']}</span>
+                                 <span class="sd">Experimental = ${count['SD']}</span>
+                                 <span class="ie">Prático = ${count['IE']}</span>
+                                 <span class="id">Relacional = ${count['ID']}</span>`;
+    </script>
+
+    <div class="image-container">
+      <img src="Gráfico Predominância PNG.png" alt="grafico">
+    </div>
+
+    <p></p>
+    <a href="https://www.tkcbusiness.com.br/e-book-desperte-o-potencial-do-seu-cerebro-vdp/" class="botao" download target="_blank">Análise seus Resultados</a>
+  </div>
+
+</body>
+
+</html>
